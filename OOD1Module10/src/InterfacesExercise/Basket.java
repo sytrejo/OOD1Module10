@@ -5,16 +5,16 @@ import java.util.ArrayList;
 
 
 public class Basket {
-	//TODO is this correct?
-	private BasketItem basketItem;
 	
 	private ArrayList<BasketItem> basketItems = new ArrayList<BasketItem>();
 	
 	public void addItem(BasketItem basketItem) {
+		basketItems.add(basketItem);
 		System.out.println("Your item has been added to the basket");
 	}
 	
 	public void removeItem(BasketItem basketItem) {
+		basketItems.remove(basketItem);
 		System.out.println("Your item has been removed from the basket");
 	}
 	
